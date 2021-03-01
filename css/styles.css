@@ -1,160 +1,151 @@
-/*
-COLOR Palette
-https://coolors.co/5aa9e6-353535-ffffff-8a897c-a38560
-#5aa9e6 - Blue Jeans
-#353535 - Jet
-#ffffff - White 
-#8a897c - Middle Grey
-#a38560 Cafe Au Lait
- */
-
- /* Global styles
+/* Global styles
  ----------------------------------------------*/
- @font-face{
-    font-family: Comforta;
-    src: url(../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+@font-face {
+  font-family: Comforta;
+  src: url(../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
 }
-@font-face{
-    font-family: OpenSans;
-    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
 }
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
-*, *:before, *:after{
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-body{
-     color: #353535; /*Jet*/
-     margin: 0;
-     padding: 0;
-     font-family: OpenSans, sans-serif;
+body {
+  color: #ffffff; /*Jet*/
+  margin: 0;
+  padding: 0;
+  font-family: OpenSans, sans-serif;
 }
-img{
-    width: 300px;
-    float: right;
+img {
+  width: 300px;
+  float: right;
 }
-a{
-    color: #ffffff;
+a {
+  color: #ffffff;
 }
-a:hover{
-    text-decoration: none;
-}
-
-h1, h2{
-    font-family: OpenSans, sans-serif;
-    margin: 0;
-}
-.content-wrap{
-    max-width: 800px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 60px 0;
+a:hover {
+  text-decoration: none;
 }
 
-h3{
-    margin-bottom: 0;
+h1,
+h2 {
+  font-family: OpenSans, sans-serif;
+  margin: 0;
 }
-.item-details h3 + p{
-    font-style: italic;
-}
-.item-details h3 ~ p{
-    margin: 0;
-}
-.divider > section{
-    border-bottom: 1px dashed #353535;
-    padding: 25px 0;
-
-}
-.divider > section:last-of-type{
-    border-bottom: none;
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 25px 0;
 }
 
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px dashed #ffffff;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
 
- /* Profile
+/* Profile
  ----------------------------------------------*/
-header{
-    background-image: url(../images/columbus-ohio.jpg);
-};
- /* Projects
+header {
+  color: #ffffff;
+  background: #2d2d2d;
+}
+/* Projects
  ----------------------------------------------*/
-.projects{
-    background: #ffffff;
+.projects {
+  background: #2d2d2d;
 }
-.projects a{
-    color: #353535; /*Jet*/
+.projects a {
+  color: #ffffff; /*Jet*/
 }
-.projects .btn{
-    color: #353535; 
-    background: #5aa9e6;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 4px;
-    display: inline-block;
+.projects .btn {
+  color: #ffffff;
+  background: #5aa9e6;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
 }
-.projects .btn:hover{
-    background: rgba(90,169,230,80%);
+.projects .btn:hover {
+  background: rgba(90, 169, 230, 80%);
 }
-.project-item{
-    overflow: hidden;
+.project-item {
+  overflow: hidden;
 }
 
-.project-item h3{
-    margin-top: 0;
+.project-item h3 {
+  margin-top: 0;
 }
- /* Work Experience
+/* Work Experience
  ----------------------------------------------*/
-.work-experience{
-    background: #8a897c;
-    color: #ffffff;
+.work-experience {
+  background: #2d2d2d;
+  color: #ffffff;
 }
 
- /* Education
+/* Education
  ----------------------------------------------*/
- .education{
-    background-image: url(../images/education.jpg);
-    background-size: cover;
-    padding-bottom: 100px;
- }
+.education {
+  background: #2d2d2d;
+  color: #ffffff;
+}
 
- /* Contact Info
+/* Contact Info
  ----------------------------------------------*/
- footer{
-     background: #a38560;
-     color: #ffffff;
- }
- .contact-list{
-     list-style-type: none;
-     padding: 0;
- }
- .contact-list a{
-     padding: 15px;
-     display: inline-block;
- }
- /* Responsive Styles Info
+footer {
+  background: #2d2d2d;
+  color: #ffffff;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+/* Responsive Styles Info
  ----------------------------------------------*/
- @media screen and (min-width:750px){
-     header,footer{
-         text-align: center;
-     }
-    .project-item img{
-        float: left;
-        margin-right: 20px;
-    }
-    .job-item{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 20px;
-    }
-    .contact-list{
-        display: flex;
-        justify-content: center;
-    }
-
- }
- @media screen and (max-width:749px){
-    .contact-list a{
-        padding: 5px;
-    }
- }
- 
+@media screen and (min-width: 750px) {
+  header,
+  footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 749px) {
+  .contact-list a {
+    padding: 5px;
+  }
+}
